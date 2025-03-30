@@ -96,7 +96,36 @@ $$ ROE = dy + \delta P/E + i + g - \delta S$$
 * Delta P/E is the change in PE ratios in the market - with increasing GDP growth rates, P/E ratios trend higher as investors view the econ to be less risky and are willing to pay more. But the major stuff that affects is the PE cycle due to market volatility
 * Delta S is the dilution factor. Companies buyback / issue shares which changes dilution. Also, SMEs are not listed and they contribute to the econ - thus the expanded delta S = nbb + rd; nbb : net buybacks and rd : relative dynamism of the econ
 
-Potential GDP growth affects the 
+Potential GDP growth affects the bond prices : 
+
+    1. Higher rate of potential GDP ==> increased credit quality of bonds. Slower rate ==> raises percieved risk of bonds
+    2. Monetary policy decision are affected by diff b/w econ's estimated potential o/p and actual operating level (called o/p gap) and also using actual GDP growth vs long-term sustainable growth rate
+    3. Govt budget deficits increase during recessions and decrease during expansions - when judging fiscal policy, it is done wrt a cyclically adjusted deficit
+
+Say for example if the GDP growth forecasted for the next year is 1.5% and the long-term potential GDP growth is 3.25%. 
+
+* Here, the forecasted GDP growth << long-term potential GDP 
+* ==> an growing o/p gap / slack
+* ==> places downward pressure on inflation reduce inflation expectations
+* ==> central bank will step in to reduce interest rates
+* ==> Bond prices will rise 
+
+### 3. Production Function and Growth Accounting 
+
+* Production function is a model of link b/w inputs (factors of production), technology and output. 
+
+> 2 factor prod function : Y = AF(K,L) : 
+K - capital used to produce, 
+L - qty of labor, no of hours, 
+F - function, 
+A - A multiplicative scale called TFP - total factor productivity. Indicates general level of productivity or ***technology*** in the society
+
+Cobb-Douglas production function
+
+$$
+
+
+
 
 
 
