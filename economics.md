@@ -55,4 +55,48 @@ However, if financial markets cause declining credit stds and/or increasing leve
 
 #### 2. Political Stability, Rule of law and Property rights
 
+Stable and effective govt, well-developed legal system and respect for property rights : ***key for econ growth***
+
+Clearly established property rights incentivises households and cos to save and invest + legal system to protect these laws. War and other political instability increases risk and discourages foreign investment.
+
+#### 3. Education and Health Care Systems 
+
+Inadequate education ==> Unskilled workers. Deving countries also face brain drain. Better education ==> Increase in productivity of existing physical capital 
+
+Good healthcare is important for healty workers and improving life expectancy
+
+#### 4. Tax and Regulatory Systems
+
+Limited regulation ==> encourages entrepreneurial activity and new companies. Strong correlation b/w entry of new companies and average productivity levels
+
+#### 5. Free and Unrestricted Capital Flows 
+
+Foreign investment can take place in 2 ways : 
+
+    1. FDI - Foreign direct investments - eg. buying ppe in country
+    2. Foreign investors investing in securities of local companies
+
+International trade and low tariffs allow locals to get good quality products for cheap. It increases local vedor's competition but also give them access to braoder markets 
+
+### 2. Why potential growth matters to investors  
+
+Both equity and bonds depend on growth rate of econ activity. Potential GDP - max amount of o/p that an econ can produce without causing inflation
+
+In the long run, real earnings growth cannot exceed the growth rate of potential GDP
+
+Grinold-Kroner decomposition of ROE 
+
+> ROE = Div. yield (dy) + ***expected capital gain***
+      = div yield + expected repricing + ***EPS growth***
+      = dev yield + expected repricing + inflation rate + real econ growth - change in outstanding shares
+
+$$ ROE = dy + \delta P/E + i + g - \delta S$$
+
+* dy has been fairly stable over time and a significant contributor to equity market returns 
+* Delta P/E is the change in PE ratios in the market - with increasing GDP growth rates, P/E ratios trend higher as investors view the econ to be less risky and are willing to pay more. But the major stuff that affects is the PE cycle due to market volatility
+* Delta S is the dilution factor. Companies buyback / issue shares which changes dilution. Also, SMEs are not listed and they contribute to the econ - thus the expanded delta S = nbb + rd; nbb : net buybacks and rd : relative dynamism of the econ
+
+Potential GDP growth affects the 
+
+
 
