@@ -90,7 +90,7 @@ Grinold-Kroner decomposition of ROE
       = div yield + expected repricing + ***EPS growth***
       = dev yield + expected repricing + inflation rate + real econ growth - change in outstanding shares
 
-$$ ROE = dy + \delta P/E + i + g - \delta S$$
+$$ ROE = dy + \Delta P/E + i + g - \Delta S$$
 
 * dy has been fairly stable over time and a significant contributor to equity market returns 
 * Delta P/E is the change in PE ratios in the market - with increasing GDP growth rates, P/E ratios trend higher as investors view the econ to be less risky and are willing to pay more. But the major stuff that affects is the PE cycle due to market volatility
@@ -122,10 +122,30 @@ A - A multiplicative scale called TFP - total factor productivity. Indicates gen
 
 Cobb-Douglas production function
 
-$$
+$$ F(K,L) = K^{\alpha} L^{1-\alpha} $$
 
+where $ \alpha $ is the share of output paid by companies to capital and labor. 
 
+The capital and labor is paid based on MPK : Marginal Product of Capital - increase in o/p for unit increase in capital and labor also based on Marginal Product of Labor MPL
 
+MPK for the cobb douglas function is 
 
+$$ MPK = \alpha K^{\alpha - 1} L^{1-\alpha} $$
 
+For profit maximization, MPK = r
 
+So now : 
+
+$$\alpha*\frac{Y}{K} = r $$
+
+Thus alpha = ratio of rk to Y : ratio of capital income rk to output or GDP Y. Thus alpha is the share of GDP paid out to suppliers of capital. Similarly, 1-alpha is share of income paid out to larour. 
+
+* Cobb-douglas function exhibits constant return to scale - if all i/p are increased by some %, the o/p also increases by the same %
+* If we divide the function by L (labor), we get :
+
+$$\frac{Y}{L} = AF(\frac{K}{L},\frac{L}{L}) = AF(\frac{K}{L}, 1 ) $$
+
+This equation tells that the amount of goods a worker can produce depends on : 
+    1. the amount of capital available to each worker, 
+    2. technology or TFP 
+    3. share of capital in GDP $\alpha$
