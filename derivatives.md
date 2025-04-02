@@ -19,10 +19,26 @@
 
 A few assumptions are made : 
 
-    1. Instruments are identifiale and investible
-    2. There are not market frictions : transaction costs, taxes
+    1. Instruments are identifiable and investible
+    2. There are no market frictions : transaction costs, taxes
     3. Short selling is allowed with full use of proceeds
     4. Underlying instrument follows a known stat distribution
     5. Borrowing and lending at a risk free rate is available 
+
+### Binomial Option Valuation Model
+
+* Used to value path-dependent options. BSM is used for path-independent options. 
+An option is path dependent if the value depends not only on the underlying at expiration but also on how it got there. Path dependent : American options (can be exercised prior to expiration), Independent : European options
+
+Naming : 
+
+    1. $S_t$ : Underlying's price at time t. $S_T$ for time T
+    2. t or T (time) is represented as fraction of year : 90/365, 60/365
+    3. $c_t$ : European style call price at time t with expiration on time = T; $C_t$ : American style
+    4. At initiation date, subscripts are ignored ==> $c = c_0$
+
+
+
+
 
 
