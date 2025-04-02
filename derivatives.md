@@ -32,10 +32,50 @@ An option is path dependent if the value depends not only on the underlying at e
 
 Naming : 
 
-    1. $S_t$ : Underlying's price at time t. $S_T$ for time T
-    2. t or T (time) is represented as fraction of year : 90/365, 60/365
-    3. $c_t$ : European style call price at time t with expiration on time = T; $C_t$ : American style
-    4. At initiation date, subscripts are ignored ==> $c = c_0$
+1. $S_t$ : Underlying's price at time t. $S_T$ for time T
+2. t or T (time) is represented as fraction of year : $\frac{90}{365}$, $\frac{60}{365}$
+3. $c_t$ : European style call price at time t with expiration on time = T; $C_t$ : American style
+4. At initiation date, subscripts are ignored ==> $c = c_0$
+
+A 90-day EU call option : c = 2.50 and T = $\frac{90}{365} = 0.246575$ has exercise value of : 
+
+$c_T$ = Max(0, $S_T - X$)
+
+$p_T$ = Max(0, $X - S_T$)
+
+#### Hedge Ratio and Forming an equivalent portfolio
+
+Lets a stock is at 100. We buy a call option at strike 100.
+
+Now the stock has 2 options : Go to 120 or go to 80. 
+
+If it goes to 120, the call option value will be 120 - 100 = 20. If it goes to 80, the call option will expire worthless so 0. 
+
+Now, if we need to create a position using the underlying stock and cash that replicates this call option pay off, we need to buy the underlying and borrow money. 
+
+How much of the underlying should you buy? You should buy h (hedge ratio) amount of shares where h is : 
+
+$$h = \frac{20-0}{120-80} = 0.5$$
+
+How much should you borrow? 
+
+The value $ V = hS + B$
+
+If the stock is UP : 
+$$20 = 0.5*120 + B $$
+
+which implies B = -40, i.e, you should borrow 40.
+
+If the stock is DOWN : 
+$$ 0 = 0.5*80 + B $$
+
+which implies B = -40 again.
+
+Thus you need to buy 0.5 shares of the underlying and borrow 40 in cash to replicate the call option's value
+
+### One period Binomial Model
+
+
 
 
 
