@@ -43,6 +43,21 @@ $c_T$ = Max(0, $S_T - X$)
 
 $p_T$ = Max(0, $X - S_T$)
 
+## One period Binomial Model
+
+![img](https://raw.githubusercontent.com/TheProfitPilgrim/CFAL2/main/cfa_media/2.png)
+
+The binomial model has only 2 options - the price going up or down 
+
+Upfactor : $ u = \frac{S^+}{S} $
+
+Downfactor : $ d = \frac{S^-}{S} $
+
+Now for a two period call option, t = 0 is start. Say it moves up at t = 1(so $c_+$). Now value of the call option at expiry at t = 2 can be either : 
+
+$$c^{++} = Max (0, u^2S - X) $$ 
+$$c^{+-} = Max (0, udS - X) $$
+
 #### Hedge Ratio and Forming an equivalent portfolio
 
 Lets a stock is at 100. We buy a call option at strike 100.
@@ -71,11 +86,43 @@ $$ 0 = 0.5*80 + B $$
 
 which implies B = -40 again.
 
-Thus you need to buy 0.5 shares of the underlying and borrow 40 in cash to replicate the call option's value
+* Thus you need to buy 0.5 shares of the underlying and borrow 40 in cash to replicate the call option's value
+* If you consider cost of borrowing as risk free rate, then you should borrow PV of that amount 
+* So for a call option : 
+* Buy $h = \frac{c^+ - c^-}{S^+ - S^-}$ units of the underlying and borrow PV $(-hS^- + c^-)$
 
-### One period Binomial Model
+![img](https://raw.githubusercontent.com/TheProfitPilgrim/CFAL2/main/cfa_media/1.png)
 
+Answer A 
 
+* For a put positions to be replicated, the same Hedge formula holds good. Just replace c with p. 
+* But there is a difference : $p^+$ will be lesser than $p^-$ thus, the hedge ratio will be negative indicating that you should short the underlying and lend money
+
+Thus in the **expectations approach**, the value of call and put is : 
+
+$$ c = PV(\pi c^+ + (1-\pi)c^-) = E(c_1) $$
+
+$$ p = PV(\pi p^+ + (1-\pi)p^-) = E(p_1) $$
+
+where the risk neural probability $\pi$ 
+
+$$\pi = \frac{(1+r) - d}{u-d}$$
+
+r : interest rate / risk free rate
+
+* This expected value is different in the sense that the probabilities are not determined by the investors based on their view. It is objectively determined. 
+
+### Two period Binomial Model: Call Options
+
+* For a two period binomial option, there are 4 possibilities. ++, +-, -+ and --. The +- and -+ yield the same results thus 3 possibilities. 
+
+* Draw the tree with possibilities and find it step by step from t=2 --> t=1 and then t=0. Based on the option values of t=2 we find t=1 and then using t=1 we find t=0
+
+* 2 important concepts : 
+    1. Self-financing : the replicating will not require any additional funds from the arbitrageur during the entire lifetime
+    2. Dynamic Replication : at every step, the replication mimics the expiration value of the option
+
+* The main differnce b/w European and American options is checking for exercising at every step. Follow the same steps as EU options but if the exercise call/put price is higher than the calculated one, use that as the value for further steps 
 
 
 
