@@ -112,6 +112,13 @@ r : interest rate / risk free rate
 
 * This expected value is different in the sense that the probabilities are not determined by the investors based on their view. It is objectively determined. 
 
+    Suppose a call option is trading at $20 and its value is $18, the arbitrage to do here is : 
+    1. Short the call option
+    2. Replicate a long call position so : 
+        * Buy underlying shares
+        * Borrow funds
+
+
 ### Two period Binomial Model: Call Options
 
 * For a two period binomial option, there are 4 possibilities. ++, +-, -+ and --. The +- and -+ yield the same results thus 3 possibilities. 
@@ -124,7 +131,17 @@ r : interest rate / risk free rate
 
 * The main differnce b/w European and American options is checking for exercising at every step. Follow the same steps as EU options but if the exercise call/put price is higher than the calculated one, use that as the value for further steps 
 
+### Role of Dividends
 
+* Dividends encourage early exercise for American calls 
+* If dividend is large enough, american call > european call
+* If no dividends, early exercise is never optimal for calls
+* For puts, early exercise might be optimal even without dividends
+
+### Interest Rate options using Binomial Model 
+
+1. Solve just like the stock case. Instead of strike price, you have exercise rate in % terms.
+2. Use the zero coupon bond rates as the equivalent of risk free rate in the stock option case - instead of doing $\frac{\pi*c^+ + (1-\pi)*c^-}{(1+r)}$, do ${\pi*c^+ + (1-\pi)*c^-}*Zero-coupon \space bond \space rate$
 
 
 
