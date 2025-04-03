@@ -141,7 +141,7 @@ r : interest rate / risk free rate
 ### Interest Rate options using Binomial Model 
 
 1. Solve just like the stock case. Instead of strike price, you have exercise rate in % terms.
-2. Use the zero coupon bond rates as the equivalent of risk free rate in the stock option case - instead of doing $\frac{\pi*c^+ + (1-\pi)*c^-}{(1+r)}$, do ${\pi*c^+ + (1-\pi)*c^-}*Zero-coupon \space bond \space rate$
+2. Use the zero coupon bond rates as the equivalent of risk free rate in the stock option case - instead of doing $\frac{\pi*c^+ + (1-\pi)*c^-}{(1+r)}$, do ${\pi*c^+ + (1-\pi)*c^-}*Zero-coupon \ bond \ rate$
 
 
 
