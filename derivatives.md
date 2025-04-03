@@ -49,9 +49,9 @@ $p_T$ = Max(0, $X - S_T$)
 
 The binomial model has only 2 options - the price going up or down 
 
-Upfactor : $ u = \frac{S^+}{S} $
+Upfactor : $u = \frac{S^+}{S}$
 
-Downfactor : $ d = \frac{S^-}{S} $
+Downfactor : $d = \frac{S^-}{S}$
 
 Now for a two period call option, t = 0 is start. Say it moves up at t = 1(so $c_+$). Now value of the call option at expiry at t = 2 can be either : 
 
