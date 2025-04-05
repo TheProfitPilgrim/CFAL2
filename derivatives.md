@@ -43,7 +43,7 @@ $c_T$ = Max(0, $S_T - X$)
 
 $p_T$ = Max(0, $X - S_T$)
 
-## One period Binomial Model
+### One period Binomial Model
 
 ![img](https://raw.githubusercontent.com/TheProfitPilgrim/CFAL2/main/cfa_media/2.png)
 
@@ -143,6 +143,48 @@ r : interest rate / risk free rate
 1. Solve just like the stock case. Instead of strike price, you have exercise rate in % terms.
 2. Use the zero coupon bond rates as the equivalent of risk free rate in the stock option case - instead of doing $\frac{\pi*c^+ + (1-\pi)*c^-}{(1+r)}$, do ${\pi*c^+ + (1-\pi)*c^-}*Zero-coupon \ bond \ rate$
 
+### BSM Option Valuation Model
 
+* Follows no arbitrage approach but applied with continuous time
+* Uses GBM - geometric brownian motion as its stochastic process because:
+    * The value never reaches 0 or goes below it (like stocks and many fin instruments)
+    * Does not make any sudden jumps
 
+#### Assumptions of BSM 
+
+* Continuously compounded return is normall distributed
+* Price move continuously, does not jump from one value to another
+* Underlying is liquid - can be easily bought and sold
+* Continuous trading is available
+* Complete short selling is allowed
+* No market frictions
+* No arbitrage opportunities
+* Options are European style : early exercise not allowed 
+* Continuously compounded risk-free rate is known and constant & borrowing and lending at risk-free rate is allowed
+* Volatility of the return on the underlying is known and constant 
+* If underlying pays a yield, it is expressed as continuous known and constant yield at annualised rate
+
+### BSM Model : Components 
+
+The BSM model for stocks : 
+
+![img](https://raw.githubusercontent.com/TheProfitPilgrim/CFAL2/main/cfa_media/3.png)
+
+Due to symmetry of normal distribution,*** N(-x) = 1 - N(x)
+
+The BSM can also be thought of as 2 components : the stock and bond component
+
+For call options, $SN(d_1)$ is the stock component and $e^{-rT}XN(d_2)$ is the bond component 
+
+For put options, $SN(-d_1)$ is the stock component and $e^{-rT}XN(-d_2)$ is the bond component
+
+The BSM model can be interpreted as a dynamically managed portfolio of stocks and zero-coupon bonds.
+
+Replication strategy cost = $n_SS + n_BB$
+
+Equivalent number of underlying shares $n_S = N(d_1) > 0$ for calls and $n_S = -N(-d_1) < 0$ for puts. The price of a zero coupon bond is $B = e^{-rT}X$. 
+
+If n is +ve, we are buying the underlying. If n is -ve, we are shorting
+
+![img](https://raw.githubusercontent.com/TheProfitPilgrim/CFAL2/main/cfa_media/4.png)
 
