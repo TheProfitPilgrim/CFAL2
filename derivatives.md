@@ -170,7 +170,7 @@ The BSM model for stocks :
 
 ![img](https://raw.githubusercontent.com/TheProfitPilgrim/CFAL2/main/cfa_media/3.png)
 
-Due to symmetry of normal distribution,*** N(-x) = 1 - N(x)
+Due to symmetry of normal distribution,***N(-x) = 1 - N(x)***
 
 The BSM can also be thought of as 2 components : the stock and bond component
 
@@ -182,9 +182,16 @@ The BSM model can be interpreted as a dynamically managed portfolio of stocks an
 
 Replication strategy cost = $n_SS + n_BB$
 
-Equivalent number of underlying shares $n_S = N(d_1) > 0$ for calls and $n_S = -N(-d_1) < 0$ for puts. The price of a zero coupon bond is $B = e^{-rT}X$. 
-
-If n is +ve, we are buying the underlying. If n is -ve, we are shorting
+* Number of shares to buy $n_S = N(d_1) > 0$ for calls and $n_S = -N(-d_1) < 0$ for puts. 
+* The price of a zero coupon bond is $B = e^{-rT}X$. 
+* Number of bonds to buy : $n_B = -N(d_2)$
+* If n is +ve, we are buying the underlying. If n is -ve, we are shorting
 
 ![img](https://raw.githubusercontent.com/TheProfitPilgrim/CFAL2/main/cfa_media/4.png)
+
+* $N(d_2)$ is also the probability that the call option expires in the money and $1-N(d_2) = N(-d_2)$ is the probability of expiring out of the money. In other words : $N(d_2) = Probability(S_T > X)$
+
+### BSM Model : Carry Benefits and Applications 
+
+
 
