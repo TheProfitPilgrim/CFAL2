@@ -193,5 +193,10 @@ Replication strategy cost = $n_SS + n_BB$
 
 ### BSM Model : Carry Benefits and Applications 
 
+![img](https://raw.githubusercontent.com/TheProfitPilgrim/CFAL2/main/cfa_media/5.png)
+
+* Carry benefits *decrease* the value of call options and *increase* the value of put options
+* If the stock does not pay any dividends, 
+
 
 
