@@ -189,14 +189,35 @@ Replication strategy cost = $n_SS + n_BB$
 
 ![img](https://raw.githubusercontent.com/TheProfitPilgrim/CFAL2/main/cfa_media/4.png)
 
-* $N(d_2)$ is also the probability that the call option expires in the money and $1-N(d_2) = N(-d_2)$ is the probability of expiring out of the money. In other words : $N(d_2) = Probability(S_T > X)$
+#### Option Expiry Probabilities (BSM Model)
+
+| Option Type | Expiry Condition     | Probability Expression |
+|-------------|----------------------|-------------------------|
+| Call        | In the Money (ITM)   | \( N($d_2$) \)            |
+| Call        | Out of the Money     | \( N($-d_2$) \)           |
+| Put         | In the Money (ITM)   | \( N($-d_2$) \)           |
+| Put         | Out of the Money     | \( N($d_2$) \)            |
 
 ### BSM Model : Carry Benefits and Applications 
 
 ![img](https://raw.githubusercontent.com/TheProfitPilgrim/CFAL2/main/cfa_media/5.png)
 
 * Carry benefits *decrease* the value of call options and *increase* the value of put options
-* If the stock does not pay any dividends, 
+* If the stock does not pay any dividends but you use this model, ie, $\gamma = 0$, then the value will change because d1 and d2 have been adjusted for dividends
 
+* For foreign exchange options, $\gamma = r^f$ is the continuously compounded foreign risk free rate
+* Carry benefit is the interest rate in the foreign country because the foreign currency could be invested in the foreign country's risk free rate
+* Both the underlying and exercise price must by quoted in the same currency
+* Volatility in the model is the volitility of the log return of the spot rate
+* There is a notional amount and cost of option = value * notional amount
+
+* The two components for call options are : The foreign exchange compoenent (similar to stock component) $Se^{-r^fT}N(d_1)$ and the bond component is $Xe^{-rT}N(d_2)$
+* For Put options it is the same as call but with $-d_1$ and $-d_2$ for the respective components
+* If option is at-the-money, then underlying = spot = exercise price
+
+### Black Option Valuation Model and EU options on Futures
+
+* BSM model when underlying is costless to carry like equity indices, forwards / futures contract
+* 
 
 
