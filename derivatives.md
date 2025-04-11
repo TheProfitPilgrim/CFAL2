@@ -218,6 +218,13 @@ Replication strategy cost = $n_SS + n_BB$
 ### Black Option Valuation Model and EU options on Futures
 
 * BSM model when underlying is costless to carry like equity indices, forwards / futures contract
-* 
+
+![img](https://raw.githubusercontent.com/TheProfitPilgrim/CFAL2/main/cfa_media/6.png)
+
+* For this also, there is a futures and bond component (like the stock and bond component)
+* For call options, the futures component is $F_0(T)e^{-rT}N(d_1)$ and $Xe^{-rT}N(d_2)$ is the bond component
+* For put options, the components are same but with -ve sign in the -d1 and -d2
+
+* Futures option valuation based on the Black model is simply computation of the present value of difference between future prices and the exercise price
 
 
